@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 80%;
+    padding: 5px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.weather {
+    margin-bottom: 20px;
+}
+
+.weather img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.temp {  
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.city {  
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 30px;
+}
+
+.Humidity, .Speed {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
